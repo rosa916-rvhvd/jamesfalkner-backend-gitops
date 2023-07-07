@@ -1,0 +1,15 @@
+app:
+  name: jamesfalkner-poi-backend-app
+  namespace: jamesfalkner
+  cluster: .apps.rosa916.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rosa916-rvhvd/jamesfalkner-backend
+  org: rosa916-rvhvd
+  name: jamesfalkner-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: jamesfalkner/poi-backend-app
+  tag: latest
